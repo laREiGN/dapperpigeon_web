@@ -32,7 +32,6 @@ export default function AllPosts() {
           allPostsData.map((post, index) => (
             <Link to={"/" + post.slug.current} key={post.slug.current}>
               <span key={index}>
-                <img src={post.mainImage.asset.url} alt="" />
                 <span>
                   <h2>{post.title}</h2>
                 </span>
