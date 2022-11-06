@@ -25,12 +25,12 @@ export default function AllPosts() {
 
   return (
     <div>
-      <h2>Blog Posts</h2>
-      <h3>Welcome to my blog posts page!</h3>
+      <h2>Dapper Pigeon</h2>
       <div>
         {allPostsData &&
           allPostsData.map((post, index) => (
             <Link to={"/" + post.slug.current} key={post.slug.current}>
+              <img src={post.mainImage.asset.url} alt="" />
               <span key={index}>
                 <span>
                   <h2>{post.title}</h2>
