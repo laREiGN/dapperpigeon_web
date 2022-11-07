@@ -1,17 +1,16 @@
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AllPosts from './Components/AllPosts';
-import OnePost from './Components/OnePost';
+import { Header, PageRouter } from './components/common';
 import './index.css';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<AllPosts />} />
-        <Route path="/:slug" element={<OnePost />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      {/* Header + navigation bar */}
+      <Header/>
+
+      {/* Show the correct page depending on our URL */}
+      <PageRouter/>
+    </div>
   )
 }
 

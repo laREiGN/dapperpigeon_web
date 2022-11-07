@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import sanityClient from "../Sanity/client.js";
+import { useParams, Link } from "react-router-dom";
+
+import { sanityClient } from "../../sanity";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 
@@ -26,8 +27,9 @@ export default function OnePost() {
              }
            },
          body,
-        "name": author->name,
-        "authorImage": author->image
+        "authorName": author->name,
+        "authorImage": author->image,
+        "authorSlug": author->slug
        }`,
         { slug }
       )
@@ -41,20 +43,22 @@ export default function OnePost() {
     <div>
       <div>
         <h2>{postData.title}</h2>
-        <div>
-          <img
-            src={urlFor(postData.authorImage).width(100).url()}
-            alt="Author is Kap"
-          />
-          <h4>{postData.name}</h4>
-        </div>
+        <Link to={"/team/" + postData.authorSlug.current}>
+          <div>
+            <img
+              src={urlFor(postData.authorImage).width(100).url()}
+              alt="Author is Dapper Pigeon"
+            />
+            <h4>{postData.authorName}</h4>
+          </div>
+        </Link>
       </div>
       <img src={urlFor(postData.mainImage).width(200).url()} alt="" />
       <div>
         <BlockContent
           blocks={postData.body}
-          projectId={sanityClient.clientConfig.projectId}
-          dataset={sanityClient.clientConfig.dataset}
+          projectId={sanityClient.config().projectId}
+          dataset={sanityClient.config().dataset}
         />
       </div>
     </div>
