@@ -1,7 +1,5 @@
 .header {
-    width: 100%;
-    height: 200px;
-    background:
-        radial-gradient(circle at center, var(--light-blue-transparent) 0%, var(--dark-blue-transparent) 33%, var(--dark-blue) 100%),
-        url('../../../../public/assets/images/noise.svg');
+    height: 150px;
+    background: linear-gradient(to top, transparent, var(--light-red) 10%);
+    padding: 1em;
 }

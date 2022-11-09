@@ -1,24 +1,65 @@
 :root {
-  --dark-blue: rgba(78, 93, 161, 0.9);
-  --dark-blue-transparent: rgba(78, 93, 161, 0.6);
-  --light-blue: rgba(128, 180, 234, 0.9);
-  --light-blue-transparent: rgba(128, 180, 234, 0.6);
-  --dark-red: rgba(185, 42, 85, 0.9);
-  --dark-red-transparent: rgba(185, 42, 85, 0.6);
-  --light-red: rgba(235, 87, 131, 0.9);
-  --light-red-transparent: rgba(235, 87, 131, 0.6);
+  --dark-blue: rgba(78, 93, 161, 1);
+  --dark-blue-transparent: rgba(78, 93, 161, 0.7);
+  --light-blue: rgba(128, 180, 234, 1);
+  --light-blue-transparent: rgba(128, 180, 234, 0.7);
+  --dark-red: rgba(185, 42, 85, 1);
+  --dark-red-transparent: rgba(185, 42, 85, 0.7);
+  --light-red: rgba(235, 87, 131, 1);
+  --light-red-transparent: rgba(235, 87, 131, 0.7);
+
+  --grainy-red-radial: radial-gradient(
+                          circle at center, 
+                          var(--light-red-transparent) 0%, 
+                          var(--dark-red-transparent) 40%, 
+                          var(--dark-red) 100%),
+                url('../public/assets/images/noise.svg');
+  --grainy-blue-radial: radial-gradient(
+                          circle at center, 
+                          var(--light-blue-transparent) 0%, 
+                          var(--dark-blue-transparent) 40%, 
+                          var(--dark-blue) 100%),
+                url('../public/assets/images/noise.svg');
+  --grainy-red-linear: linear-gradient(
+                          90deg, 
+                          var(--dark-red) 0%, 
+                          var(--dark-red-transparent) 40%, 
+                          var(--light-red-transparent) 50%, 
+                          var(--dark-red-transparent) 60%, 
+                          var(--dark-red) 100%),
+                url('../public/assets/images/noise.svg');
+  --grainy-blue-linear: linear-gradient(
+                          90deg, 
+                          var(--dark-blue) 0%,
+                          var(--dark-blue-transparent) 30%,
+                          var(--light-blue-transparent) 50%,
+                          var(--dark-blue-transparent) 70%,
+                          var(--dark-blue) 100%),
+                url('../public/assets/images/noise.svg');
 }
 
 body {
   margin: 0;
   padding:  0;
+  min-height: 100%;
+  background: var(--grainy-blue-radial); 
+  background-attachment: fixed;
+  mask: url('../public/assets/images/noise.svg');
+  -webkit-mask: url('../public/assets/images/noise.svg');
+}
+
+div {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
+  margin: 0;
   font-family: 'Chawp';
 }
 
 p {
+  margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
