@@ -1,0 +1,40 @@
+.postContainer {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.postContainer h1, h2 {
+    align-self: start;
+    padding: 0;
+    margin: .5em 0 0 0;
+}
+
+.postContainer h2 {
+    font-weight: normal;
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+.postImageContainer {
+    width: 100%;
+    max-width: 1500px;
+    height: 25vw;
+    max-height: 1000px;
+    overflow: hidden;
+    display: flex;
+    background-color: var(--light-red-transparent);
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    border: .5em solid var(--dark-red);
+    border-radius: 5em;
+}
+
+.postImage {
+    width: 100%;
+}
