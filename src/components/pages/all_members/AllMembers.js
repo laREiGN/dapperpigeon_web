@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { sanityClient } from "../../sanity";
+import { sanityClient } from "../../config";
 
 export default function AllMembers() {
   const [allMembersdata, setAllMembers] = useState(null);
