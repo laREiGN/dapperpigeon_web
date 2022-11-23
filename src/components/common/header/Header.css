@@ -1,58 +1,95 @@
 .header {
-    height: 200px;
-    background: linear-gradient(to top, transparent, var(--light-red) 10%);
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-column-gap: 5px;
-    justify-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 7vh;
+    padding: 0 5%;
+    margin: 0;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    z-index: 10;
 }
 
-.logo {
-    height: 190px;
-    margin-right: auto;
-    grid-column-start: 1;
+.header > * {
+    flex: 0 0 50%;
+    flex-direction: row;
+}
+
+.headerLogo {
+    width: fit-content;
+    height: fit-content;
+    margin: auto 1.5em;
+}
+
+.headerLogo h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.headerSocials {
+    width: fit-content;
+    height: fit-content;
+    gap: 1em;
+    margin: auto 0;
+}
+
+.social {
+    height: 1.5em;
+}
+
+.social svg {
+    height: 1.5em;
+    width: auto;
+}
+
+.headerNavigationContainer {
+    width: 80%;
+    flex-direction: row;
+    margin: auto 0;
+    margin-left: auto;
 }
 
 .navBar {
-    grid-column-start: 2;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-
-.navBar ul {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
+    font-size: 1em;
 }
 
-.link {
-    height: 200px;
-    text-align: center;
+.navBar a {
     text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    margin: auto;
+    font-size: 0.5em;
+    border: 3px solid transparent;
     color: white;
-    background-color: transparent;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
-.link:hover {
-    color: var(--light-blue);
-    background: linear-gradient(to top, transparent, var(--dark-red-transparent) 10%);
+.navBar a:hover {
+    color: var(--orange-accent)
 }
 
-.link li {
-    height: 100%;
-    margin: 0 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.active-link {
+    border-bottom: 3px solid var(--orange-accent) !important;
 }
 
-.link h1 {
-    font-size: 3em;
-    text-align: center;
-    padding: 0 0.5em;
+.contact {
+    padding: 0.75em 4em;
+    border-radius: 2em;
+    color: var(--dark) !important;
+    background-color: var(--orange-accent);
 }
+
+.contact:hover {
+    color: white !important;
+}
+

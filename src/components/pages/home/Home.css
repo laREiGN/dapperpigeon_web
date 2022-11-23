@@ -1,24 +1,67 @@
-.homeContainer {
-    min-height: 100%;
-    padding: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ctaContainer {
-    width: 70%;
-}
-
-.flex {
+.home-container {
     width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
-    align-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
     justify-content: center;
-    margin-top: 1em;
 }
 
-.homeContainer h1 {
+.parallax-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-blue);
+}
+
+.text-container {
+    margin-bottom: 15em;
+}
+
+.text-container h1, h2 {
+    position: relative;
+    z-index: 20;
     text-align: center;
+    color: var(--dark);
+}
+
+.title {
+    font-size: 4.5em;
+    font-family: Montsarrat, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.subtitle {
+    font-size: 1.5em;   
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;   
+}
+
+.parallax-wrapper .parallax-layer {
+    position: absolute;
+    bottom: 2%;
+}
+
+.parallax-wrapper .parallax-layer:nth-child(1) {
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 8;
+}
+
+.parallax-wrapper .parallax-layer:nth-child(2) {
+    width: 100%;
+    z-index: 7;
+}
+.parallax-wrapper .parallax-layer:nth-child(3) {
+    width: 100%;
+    z-index: 6;
+}
+.parallax-wrapper .parallax-layer:nth-child(4) {
+    width: 100%;
+    z-index: 5;
 }

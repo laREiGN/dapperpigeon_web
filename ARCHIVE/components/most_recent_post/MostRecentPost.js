@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { sanityClient } from "../../sanity";
-import { useIsOverflow, formatDate } from "../../common";
+import { sanityClient } from "../../../src/components/sanity";
+import { useIsOverflow, formatDate } from "../../../src/components/common";
 import BlockContent from "@sanity/block-content-to-react";
 
 import './MostRecentPost.css';
