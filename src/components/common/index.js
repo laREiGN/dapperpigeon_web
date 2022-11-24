@@ -1,11 +1,11 @@
 import Header from "./header";
-import Footer from "./footer";
+import Countdown from "./countdown";
 import PageRouter from "./page_router";
 import { formatDate } from "./utils";
 
 export {
     Header,
-    Footer,
+    Countdown,
     PageRouter,
     formatDate
 }

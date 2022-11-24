@@ -62,9 +62,6 @@ export default function Home() {
     return (
         <div>
             <div className="parallax-wrapper">
-                <div>
-                    
-                </div>
                 <div value="0" id="largest" className="parallax-layer">
                     <Layer1 />
                 </div>

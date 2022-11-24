@@ -1,0 +1,57 @@
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--dark);
+  height: fit-content;
+  gap: 2em;
+  margin: 5% 0;
+}
+
+.countdown-container h1 {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  justify-content: center;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  width: 10%;
+  aspect-ratio: 1/1.2;
+}
+
+.box-container h2 {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: white;
+}
+
+.box {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: linear-gradient(0deg, rgba(239, 109, 37, 0.9) 50%, rgba(239, 109, 37, 0.64) 50%);
+  border-radius: 3px;
+  display: flex;
+}
+
+.box h1 {
+  text-align: center;
+  margin: auto;
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 5em;
+}

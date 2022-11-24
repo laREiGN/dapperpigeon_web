@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { Header, PageRouter } from './components/common';
+import { Header, Countdown, PageRouter } from './components/common';
 import './index.css';
 
 export default function App() {
@@ -11,6 +11,8 @@ export default function App() {
           <Header />
           {/* Show the correct page depending on our URL */}
           <PageRouter />
+          {/* Show the countdown timer */}
+          <Countdown />
         </div>
     </BrowserRouter>
   )
