@@ -1,7 +1,11 @@
 import sanityClient from './sanity-config';
-import particlesConfig from './particles-config';
+import white_bubbles from './particles/white-bubbles';
+import yellow_bubbles from './particles/yellow-bubbles';
+import fireflies from './particles/fireflies';
 
 export {
     sanityClient,
-    particlesConfig
+    white_bubbles,
+    yellow_bubbles,
+    fireflies
 }
