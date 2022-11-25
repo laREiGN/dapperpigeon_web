@@ -77,3 +77,9 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+.component-container {
+  width: 40%;
+  margin: 0 auto;
+  padding: 1em 0;
+}

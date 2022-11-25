@@ -6,7 +6,7 @@
   background-color: var(--dark);
   height: fit-content;
   gap: 2em;
-  margin: 5% 0;
+  margin: 2em 0;
 }
 
 .countdown-container h1 {
@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-  width: 10%;
+  width: 25%;
   aspect-ratio: 1/1.2;
 }
 

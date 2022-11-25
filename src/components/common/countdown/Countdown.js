@@ -74,7 +74,7 @@ export default function Countdown() {
         </div>
         <div className="box-container">
           <div className="box">
-            <h1>{leadingZero(countdownTime.countdownHours, 2)}</h1>
+            <h1>{leadingZero(countdownTime.countdownMinutes, 2)}</h1>
           </div>
           <h2>MINUTES</h2>
         </div>

@@ -1,0 +1,60 @@
+.mailinglist-container {
+  width: 100%;
+  display: flex;
+  margin: 2em 0;
+  padding: 2em 0;
+}
+
+.mailinglist {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.email-input {
+  width: 60%;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  font-family: Montserrat, sans-serif;
+  color: var(--dark);
+}
+
+.email-input:focus {
+  outline: 2px solid var(--orange-accent);
+}
+
+::placeholder {
+  font-family: Montserrat, sans-serif;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: Montserrat, sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-family: Montserrat, sans-serif;
+}
+
+.button {
+  width: 35%;
+  padding: 0.5em;
+  border: none;
+  border-radius: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  background-color: var(--orange-accent);
+  color: var(--dark);
+}
+
+.button:hover {
+  color: white;
+}
