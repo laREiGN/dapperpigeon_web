@@ -1,4 +1,4 @@
-const white_bubbles = {
+const fallingstars_config = {
   autoPlay: true,
   background: {
     color: '#fff',
@@ -17,30 +17,31 @@ const white_bubbles = {
         enable: true,
         area: 1080
       },
-      limit: 0,
-      value: 5,
+      limit: 20,
+      value: 10,
     },
     opacity: {
-      random: {
-        enable: true,
-        minimumValue: 0.4,
-      },
-      value: 0.6,
+      value: 1,
     },
     shape: {
-      type: 'circle',
+      type: 'image',
+      image: {
+        src: 'https://cdn.discordapp.com/attachments/1041748051167023214/1045359554269032498/Particle.png',
+        height: 50,
+        width: 50,
+      },
     },
     size: {
       random: {
         enable: true,
-        minimumValue: 70
+        minimumValue: 90
       },
-      value: 120
+      value: 590,
     },
     move: {
       angle: {
         offset: 0,
-        value: 90
+        value: 0
       },
       attract: {
         distance: 200,
@@ -58,14 +59,14 @@ const white_bubbles = {
       },
       decay: 0,
       distance: {},
-      direction: "none",
+      direction: "bottom-left",
       drift: 0,
       enable: true,
       gravity: {
         acceleration: 9.81,
         enable: false,
         inverse: false,
-        maxSpeed: 50
+        maxSpeed: 50,
       },
       path: {
         clamp: true,
@@ -80,15 +81,15 @@ const white_bubbles = {
         options: {}
       },
       outModes: {
-        default: "bounce",
-        bottom: "bounce",
-        left: "bounce",
-        right: "bounce",
-        top: "bounce"
+        default: "out",
+        bottom: "out",
+        left: "out",
+        right: "out",
+        top: "out"
       },
-      random: false,
-      size: false,
-      speed: 2,
+      random: true,
+      size: true,
+      speed: 5,
       spin: {
         acceleration: 0,
         enable: false
@@ -107,4 +108,4 @@ const white_bubbles = {
   }
 }
 
-export default white_bubbles;
+export default fallingstars_config;

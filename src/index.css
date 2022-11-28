@@ -79,7 +79,12 @@ a {
 }
 
 .component-container {
-  width: 40%;
-  margin: 0 auto;
+  width: 100%;
   padding: 1em 0;
+}
+
+.tight-container {
+  width: 35%;
+  margin: 0 auto;
+  padding: 0;
 }

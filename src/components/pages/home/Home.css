@@ -15,7 +15,7 @@
     top: 35%;
 }
 
-.text-container h1, h2 {
+.text-container > h1, h2 {
     position: relative;
     z-index: 14;
     text-align: center;
@@ -64,21 +64,9 @@
     top: 60%;
 }
 
-.foreground_particles {
-    width: 100%;
-    height: 100%;
-}
-
 #ts-white-bubbles {
     position: relative;
     width: 100%;
     height: 60%;
     z-index: 3;
-}
-
-#ts-yellow-bubbles {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 9;
 }

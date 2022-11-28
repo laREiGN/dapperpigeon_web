@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { Header, Countdown, MailingList, PageRouter } from './components/common';
+import { Header, Countdown, MailingList, Brief, PageRouter } from './components/common';
+import { FallingStarsParticles } from './components/common/particles';
 import './index.css';
 
 export default function App() {
@@ -12,10 +13,15 @@ export default function App() {
           {/* Show the correct page depending on our URL */}
           <PageRouter />
           <div className='component-container'>
-            {/* Show the countdown timer */}
-            <Countdown />
-            {/* Show the mailinglist field */}
-            <MailingList />
+            <FallingStarsParticles/>
+            <div className='tight-container'>
+              {/* Show the countdown timer */}
+              <Countdown />
+              {/* Show the mailinglist field */}
+              <MailingList />
+            </div>
+            {/* CTA, Release button */}
+            <Brief />
           </div>
         </div>
     </BrowserRouter>

@@ -1,4 +1,4 @@
-const yellow_bubbles = {
+const yellowbubbles_config = {
     autoPlay: true,
     background: {
       color: '#fff',
@@ -136,4 +136,4 @@ const yellow_bubbles = {
     }
   }
   
-  export default yellow_bubbles;
+  export default yellowbubbles_config;

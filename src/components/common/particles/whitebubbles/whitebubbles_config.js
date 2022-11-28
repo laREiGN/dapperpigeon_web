@@ -1,42 +1,13 @@
-const white_bubbles = {
+const whitebubbles_config = {
   autoPlay: true,
   background: {
     color: '#fff',
     opacity: 0,
   },
   fullScreen: {
-    enable: true,
+    enable: false,
   },
   fpsLimit: 40,
-  interactivity: {
-    detectsOn: 'window',
-    events: {
-      resize: true,
-      onHover: {
-        enable: true,
-        mode: "repulse",
-      },
-    },
-    modes: {
-      repulse: {
-        distance: 200,
-        duration: 0.4,
-        factor: 100,
-        speed: 1,
-        maxSpeed: 50,
-        easing: "ease-out-quad",
-        divs: {
-          distance: 200,
-          duration: 0.4,
-          factor: 100,
-          speed: 1,
-          maxSpeed: 50,
-          easing: "ease-out-quad",
-          selectors: []
-        }
-      }
-    }
-  },
   particles: {
     color: {
       value: "#fff"
@@ -62,7 +33,7 @@ const white_bubbles = {
     size: {
       random: {
         enable: true,
-        minimumValue: 40
+        minimumValue: 70
       },
       value: 120
     },
@@ -109,11 +80,11 @@ const white_bubbles = {
         options: {}
       },
       outModes: {
-        default: "out",
-        bottom: "out",
-        left: "out",
-        right: "out",
-        top: "out"
+        default: "bounce",
+        bottom: "bounce",
+        left: "bounce",
+        right: "bounce",
+        top: "bounce"
       },
       random: false,
       size: false,
@@ -136,4 +107,4 @@ const white_bubbles = {
   }
 }
 
-export default white_bubbles;
+export default whitebubbles_config;

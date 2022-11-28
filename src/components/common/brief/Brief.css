@@ -1,0 +1,59 @@
+.brief-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5em 0;
+    gap: 1rem;
+}
+
+.brief-text {
+    width: 25%;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.ctatitle, .ctasubtitle, .ctabrief, .ctabutton {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    text-align: left;
+}
+
+.ctatitle {
+    color: white;
+    font-weight: 600;
+    font-size: 3.5em;
+}
+
+.ctasubtitle {
+    color: var(--orange-accent);
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.ctabrief {
+    color: white;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.ctabutton {
+    width: fit-content;
+    background-color: var(--orange-accent);
+    font-weight: 900;
+    color: var(--dark);
+    padding: 0.75em 2em;
+    margin: 1em 0;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.ctabutton:hover {
+    color: white;
+}
+
+.brief-image {
+    width: 60%;
+}

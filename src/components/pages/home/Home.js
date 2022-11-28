@@ -3,7 +3,7 @@ import Particles from 'react-tsparticles'
 import { loadFull } from "tsparticles";
 
 import { Layer1, Layer2, Layer3, Layer4 } from "../../../assets";
-import { white_bubbles, yellow_bubbles, fireflies } from "../../config";
+import { whitebubbles_config } from "../../common/particles";
 
 import './Home.css';
 
@@ -51,12 +51,7 @@ export default function Home() {
     }
 
     const particlesInit = async (main) => {
-        console.log(main);
         await loadFull(main);
-    };
-    
-    const particlesLoaded = (container) => {
-        console.log(container);
     };
 
     return (
@@ -81,8 +76,7 @@ export default function Home() {
                 <Particles
                     id="ts-white-bubbles"
                     init={particlesInit}
-                    loaded={particlesLoaded}
-                    options={white_bubbles}
+                    options={whitebubbles_config}
                 />
             </div>
         </div>
