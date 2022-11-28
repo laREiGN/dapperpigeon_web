@@ -14,7 +14,7 @@ export default function Brief() {
                     their bodies will not let their soul back in without resistance! Discover new parts of
                     the world while restoring the balance back to its original state.
                 </p>
-                <a href="https://www.google.com/" target="_blank" className="ctabutton">
+                <a href="https://www.google.com/" rel="noreferrer" target="_blank" className="ctabutton">
                     PRE-SAVE NOW
                 </a>
             </div>
