@@ -4,7 +4,7 @@ import './Countdown.css'
 
 export default function Countdown() {
 
-  const [expiryTime, setExpiryTime] = useState("01 jan 2023 12:00:00");
+  const [expiryTime, setExpiryTime] = useState("20 jan 2023 12:00:00");
   const [countdownTime, setCountdownTime] = useState({
     countdownDays: "",
     countdownHours: "",

@@ -26,7 +26,7 @@ export default function MailingList() {
     <div className="mailinglist-container">
       <div className="mailinglist">
         <input 
-          className="email-input" 
+          className="email-input"
           type="email"
           value={email} 
           onChange={(e) => handleEmailInput(e)} 

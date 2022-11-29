@@ -1,7 +1,6 @@
 import React from "react";
 import ExploreImageGrad from '../../../assets/images/ExploreImageGrad.svg'
 
-
 import './Brief.css';
 
 export default function Brief() {

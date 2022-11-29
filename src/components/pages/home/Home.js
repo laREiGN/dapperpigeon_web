@@ -3,7 +3,8 @@ import Particles from 'react-tsparticles'
 import { loadFull } from "tsparticles";
 
 import { Layer1, Layer2, Layer3, Layer4 } from "../../../assets";
-import { whitebubbles_config } from "../../common/particles";
+import { whitebubbles_config, FallingStarsParticles } from "../../common/particles";
+import {Countdown, MailingList, Brief } from '../../common';
 
 import './Home.css';
 
@@ -79,6 +80,17 @@ export default function Home() {
                     init={particlesInit}
                     options={whitebubbles_config}
                 />
+            </div>
+            <div className='component-container'>
+                <FallingStarsParticles/>
+                    <div className='tight-container'>
+                        {/* Show the countdown timer */}
+                        <Countdown />
+                        {/* Show the mailinglist field */}
+                        <MailingList />
+                    </div>
+                {/* CTA, Release button */}
+                <Brief />
             </div>
         </div>
     )
