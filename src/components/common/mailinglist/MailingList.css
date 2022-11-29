@@ -42,19 +42,3 @@
   /* Microsoft Edge */
   font-family: Montserrat, sans-serif;
 }
-
-.button {
-  width: 35%;
-  padding: 0.5em;
-  border: none;
-  border-radius: 20px;
-  font-family: Montserrat, sans-serif;
-  font-weight: 700;
-  font-size: 1em;
-  background-color: var(--orange-accent);
-  color: var(--dark);
-}
-
-.button:hover {
-  color: white;
-}

@@ -32,35 +32,25 @@ export default function Header() {
                         <NavLink 
                             className={({ isActive }) => (isActive ? "link active-link" : "link")}
                             to={"/"}>
-                            <li>
-                                <h1>HOME</h1>
-                            </li>
+                            <p>HOME</p>
                         </NavLink>
                         <NavLink  
                             className={({ isActive }) => (isActive ? "link active-link" : "link")}
                             to={"/game"}>
-                            <li>
-                                <h1>GAME</h1>
-                            </li>
+                            <p>GAME</p>
                         </NavLink>
                         <NavLink  
                             className={({ isActive }) => (isActive ? "link active-link" : "link")}
                             to={"/news"}>
-                            <li>
-                                <h1>NEWS</h1>
-                            </li>
+                            <p>NEWS</p>
                         </NavLink>
                         <NavLink  
                             className={({ isActive }) => (isActive ? "link active-link" : "link")}
                             to={"/team"}>
-                            <li>
-                                <h1>OUR TEAM</h1>
-                            </li>
+                            <p>OUR TEAM</p>
                         </NavLink>
-                        <NavLink className="link contact" to={"/"}>
-                            <li>
-                                <h1>CONTACT</h1>
-                            </li>
+                        <NavLink className="btn" to={"/"}>
+                            <p>CONTACT</p>
                         </NavLink>
                     </ul>
                 </div>

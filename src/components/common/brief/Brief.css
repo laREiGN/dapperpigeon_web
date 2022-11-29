@@ -8,11 +8,12 @@
 }
 
 .brief-text {
+    margin: auto 0;
     width: 25%;
-    padding: 0 1em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1.5em;
 }
 
 .ctatitle, .ctasubtitle, .ctabrief, .ctabutton {
@@ -37,23 +38,15 @@
     color: white;
     font-weight: 400;
     font-size: 1.1em;
+    line-height: 1.5em;
 }
 
-.ctabutton {
-    width: fit-content;
-    background-color: var(--orange-accent);
-    font-weight: 900;
-    color: var(--dark);
-    padding: 0.75em 2em;
-    margin: 1em 0;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-.ctabutton:hover {
-    color: white;
+.brief-image-container {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .brief-image {
-    width: 60%;
+    width: 80%;
 }

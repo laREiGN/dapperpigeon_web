@@ -23,14 +23,14 @@
 }
 
 .title {
-    font-size: 4.5em;
-    font-family: Montsarrat, sans-serif;
+    font-size: 3.5em;
+    font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-style: italic;
 }
 
 .subtitle {
-    font-size: 1.5em;   
+    font-size: 1.25em;   
     font-family: "Source Sans 3", sans-serif;
     font-weight: 600;   
 }
@@ -43,8 +43,7 @@
     left: 0;
     right: 0;
     z-index: 8;
-    top: 0.5%;
-    max-height: 100vh;
+    top: 2px;
 }
 .parallax-wrapper .parallax-layer:nth-child(2) {
     width: 102.5%;

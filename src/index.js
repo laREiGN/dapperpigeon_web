@@ -2,7 +2,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { Header, Countdown, MailingList, Brief, PageRouter } from './components/common';
 import { FallingStarsParticles } from './components/common/particles';
+
 import './index.css';
+import './styling/Buttons.css'
 
 export default function App() {
   return (

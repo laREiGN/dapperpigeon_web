@@ -34,7 +34,7 @@ export default function MailingList() {
         />
         <button 
           type="submit" 
-          className="button"
+          className="btn"
           onClick={() => handleEmailSubmit()}
         >JOIN OPEN BETA</button>
       </div>

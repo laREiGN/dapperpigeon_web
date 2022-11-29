@@ -62,32 +62,20 @@
     font-size: 1em;
 }
 
-.navBar a {
+.link {
     text-decoration: none;
     font-family: Montserrat, sans-serif;
-    font-weight: 600;
+    font-weight: bolder;
     margin: auto;
-    font-size: 0.5em;
+    font-size: 1em;
     border: 3px solid transparent;
     color: white;
 }
 
-.navBar a:hover {
+.link:hover {
     color: var(--orange-accent)
 }
 
 .active-link {
     border-bottom: 3px solid var(--orange-accent) !important;
 }
-
-.contact {
-    padding: 0.75em 4em;
-    border-radius: 2em;
-    color: var(--dark) !important;
-    background-color: var(--orange-accent);
-}
-
-.contact:hover {
-    color: white !important;
-}
-

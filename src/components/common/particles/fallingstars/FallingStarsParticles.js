@@ -9,7 +9,7 @@ export default function FallingStarsParticles() {
     return (
         <div className="particle-container">
             <Particles
-                id="ts-fallingstats-particles"
+                id="ts-fallingstars-particles"
                 options={fallingstars_config}
             />
         </div>

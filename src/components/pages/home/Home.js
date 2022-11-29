@@ -13,9 +13,10 @@ export default function Home() {
         resizeParent();
     }, []);
 
+    window.addEventListener("resize", resizeParent);
+
     document.addEventListener("mousemove", parallaxStart);
     document.addEventListener("mouseleave", parallaxEnd);
-    window.addEventListener("resize", resizeParent);
 
     function parallaxStart(event) {
         let element = document.querySelector('.parallax-wrapper')
@@ -57,8 +58,8 @@ export default function Home() {
     return (
         <div>
             <div className="parallax-wrapper">
-                <div value="0" id="largest" className="parallax-layer">
-                    <Layer1 />
+                <div value="0" className="parallax-layer">
+                    <Layer1 id="largest" />
                 </div>
                 <div value="1.2" className="parallax-layer">
                     <Layer2 />
@@ -70,8 +71,8 @@ export default function Home() {
                     <Layer4 />
                 </div>
                 <div className="text-container">
-                    <h1 className="title">DAPPER PIGEON</h1>
-                    <h2 className="subtitle">Soon available on Steam</h2>
+                    <h1 className="title">FOREST OF FREQUENCIES</h1>
+                    <h2 className="subtitle">Step into a world where music, magic and nature collide</h2>
                 </div>
                 <Particles
                     id="ts-white-bubbles"
