@@ -1,22 +1,10 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { Header, PageRouter } from './components/common';
-
-import './index.css';
-import './styling/Buttons.css'
-
-export default function App() {
-  return (
-    <BrowserRouter>
-        <div>
-          {/* Header + Socials + navigation bar */}
-          <Header />
-          {/* Show the correct page depending on our URL */}
-          <PageRouter />
-        </div>
-    </BrowserRouter>
-  )
-}
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render( <App /> );
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);

@@ -1,9 +1,16 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, {useLayoutEffect} from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import { Home, PageNotFound} from '../../pages' 
 
 export default function PageRouter() {
+
+  const location = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />

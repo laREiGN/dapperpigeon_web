@@ -4,7 +4,7 @@ import { loadFull } from "tsparticles";
 
 import { Layer1, Layer2, Layer3, Layer4 } from "../../../assets";
 import { whitebubbles_config, FallingStarsParticles } from "../../common/particles";
-import {Countdown, MailingList, Brief } from '../../common';
+import {Countdown, MailingList, Brief, Faq, Footer } from '../../common';
 
 import './Home.css';
 
@@ -12,12 +12,17 @@ export default function Home() {
 
     useEffect(() => {
         resizeParent();
+
+        window.addEventListener("resize", resizeParent);
+        document.addEventListener("mousemove", parallaxStart);
+        document.addEventListener("mouseleave", parallaxEnd);
+
+        return () => { 
+            window.removeEventListener("resize", resizeParent);
+            document.removeEventListener("mousemove", parallaxStart);
+            document.removeEventListener("mouseleave", parallaxEnd);
+        };
     }, []);
-
-    window.addEventListener("resize", resizeParent);
-
-    document.addEventListener("mousemove", parallaxStart);
-    document.addEventListener("mouseleave", parallaxEnd);
 
     function parallaxStart(event) {
         let element = document.querySelector('.parallax-wrapper')
@@ -91,6 +96,10 @@ export default function Home() {
                     </div>
                 {/* CTA, Release button */}
                 <Brief />
+                {/* FAQ */}
+                <Faq />
+                {/* Footer */}
+                <Footer />
             </div>
         </div>
     )

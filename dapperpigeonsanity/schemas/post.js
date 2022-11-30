@@ -43,6 +43,12 @@ export default {
       type: 'datetime',
     },
     {
+      name: 'blurb',
+      title: 'Blurb',
+      type: 'text',
+      description: 'A short blurb (one sentence or short paragraph intro) of the article, shown on the thumbnails but not on the actual article pages. This could even just be a copy paste of the first paragraph of the article body.',
+    },
+    {
       name: 'body',
       title: 'Body',
       type: 'blockContent',
