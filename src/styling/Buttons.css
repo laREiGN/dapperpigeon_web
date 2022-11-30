@@ -9,8 +9,15 @@
     border-radius: 20px;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.25s;
 }
 
 .btn:hover {
     color: white;
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
 }

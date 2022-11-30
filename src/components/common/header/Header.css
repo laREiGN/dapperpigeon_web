@@ -70,6 +70,7 @@
     font-size: 1em;
     border: 3px solid transparent;
     color: white;
+    transition: 0.25s;
 }
 
 .link:hover {

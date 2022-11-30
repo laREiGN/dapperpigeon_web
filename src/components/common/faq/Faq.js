@@ -13,9 +13,9 @@ export default function Faq() {
                 title,
                 subtitle
             }`
-        )
-        .then((data) => setFaqItems(data))
-        .catch(console.error);
+            )
+            .then((data) => setFaqItems(data))
+            .catch(console.error);
       }, []);
 
     return (
