@@ -29,7 +29,7 @@ const appCheck = initializeAppCheck(app, {
 
 getToken(appCheck)
   .then(() => {
-    console.log('success')
+    console.log('Retrieved app token')
   })
   .catch((error) => {
     console.log(error.message)
