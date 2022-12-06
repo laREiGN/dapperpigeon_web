@@ -9,18 +9,29 @@
 }
 
 .pnf-text {
-    width: 50%;
+    width: 80%;
     text-align: center;
     color: var(--orange-accent);
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .pnf-sub {
-    width: 40%;
+    width: 80%;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.25em;
+}
+
+@media only screen and (min-width: 992px) {
+    .pnf-text {
+        font-size: 3em;
+        width: 50%;
+    }
+    .pnf-sub {
+        font-size: 1.5em;
+        width: 40%;
+    }
 }

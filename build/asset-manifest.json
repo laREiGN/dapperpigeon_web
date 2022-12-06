@@ -1,13 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.02d2dfa1.js",
+    "main.css": "/static/css/main.8877260f.css",
+    "main.js": "/static/js/main.b9fe8859.js",
+    "static/media/ExploreImageGrad.svg": "/static/media/ExploreImageGrad.7eda4cdff12ef43000fa2c4f32319bb0.svg",
+    "static/media/Layer1.svg": "/static/media/Layer1.72ffd0a49bbd11d3c57820a0316cefb3.svg",
+    "static/media/Layer2.svg": "/static/media/Layer2.55cd7570477ee515a482d7173eff6fe2.svg",
+    "static/media/Layer3.svg": "/static/media/Layer3.72eb1e1c9bc078396c95d87d98bb872f.svg",
+    "static/media/Layer4.svg": "/static/media/Layer4.fb7d077102c558c1e45f043b50918819.svg",
+    "static/media/FooterImage.svg": "/static/media/FooterImage.265bc382368b218c33afa5cd9302844d.svg",
+    "static/media/Steam.svg": "/static/media/Steam.9d4a1906a4f297b77e20ee6a516d3c71.svg",
+    "static/media/Instagram.svg": "/static/media/Instagram.df4549458cf30fbd1ef545195265696a.svg",
     "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.02d2dfa1.js.map": "/static/js/main.02d2dfa1.js.map"
+    "static/media/TikTok.svg": "/static/media/TikTok.66e9dd5d4290a64391929a5d01f28d15.svg",
+    "static/media/Youtube.svg": "/static/media/Youtube.3638f3a4887284866329700f8d37c53b.svg",
+    "main.8877260f.css.map": "/static/css/main.8877260f.css.map",
+    "main.b9fe8859.js.map": "/static/js/main.b9fe8859.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.02d2dfa1.js"
+    "static/css/main.8877260f.css",
+    "static/js/main.b9fe8859.js"
   ]
 }
