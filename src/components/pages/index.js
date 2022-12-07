@@ -3,7 +3,8 @@ import AllPosts from "./all_posts";
 import OneMember from "./one_member";
 import OnePost from "./one_post";
 import Home from "./home";
-import PageNotFound from "./pagenotfound/PageNotFound";
+import PageNotFound from "./pagenotfound";
+import TempLandingPage from "./templandingpage";
 
 export {
     AllMembers,
@@ -11,5 +12,6 @@ export {
     OneMember,
     OnePost,
     Home,
-    PageNotFound
+    PageNotFound,
+    TempLandingPage
 }

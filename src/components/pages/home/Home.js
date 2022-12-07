@@ -4,7 +4,7 @@ import { loadFull } from "tsparticles";
 
 import { Layer1, Layer2, Layer3, Layer4 } from "../../../assets";
 import { whitebubbles_config, FallingStarsParticles } from "../../common/particles";
-import {Countdown, MailingList, Brief, RecentNews, Faq, Footer } from '../../common';
+import { Countdown, Brief, RecentNews, Faq, Footer } from '../../common';
 
 import './Home.css';
 
@@ -91,8 +91,6 @@ export default function Home() {
                     <div className='tight-container'>
                         {/* Show the countdown timer */}
                         <Countdown />
-                        {/* Show the mailinglist field */}
-                        <MailingList />
                     </div>
                 {/* CTA, Release button */}
                 <Brief />
