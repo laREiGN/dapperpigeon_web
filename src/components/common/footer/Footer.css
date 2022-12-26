@@ -43,11 +43,11 @@
 }
 
 .footer-social:hover path {
-    fill: var(--dark);
+    fill: var(--main);
 }
 
 .footer-social:hover {
-    background-color: var(--orange-accent);
+    background-color: var(--primary);
 }
 
 .footer-social svg {
@@ -57,7 +57,7 @@
 }
 
 .footer-social path {
-    fill: var(--orange-accent);
+    fill: var(--primary);
     transition: 0.5s;
 }
 

@@ -60,7 +60,7 @@
 .recentnews__post-title {
   font-family: Monetserrat, sans-serif;
   font-weight: 600;
-  color: var(--dark);
+  color: var(--main);
   font-size: 1.75rem;
   line-height: 2rem;
   height: 4rem;
@@ -72,7 +72,7 @@
 .recentnews__post-blurb {
   font-family: Monetserrat, sans-serif;
   font-weight: 500;
-  color: var(--dark);
+  color: var(--main);
   font-size: 1.25rem;
   line-height: 1.5rem;
   height: 7.5rem;

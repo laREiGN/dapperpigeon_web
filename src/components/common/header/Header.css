@@ -4,7 +4,7 @@
     height: 7vh;
     padding: 0 5vw;
     margin: 0;
-    background-color: var(--dark);
+    background-color: var(--main);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -74,9 +74,9 @@
 }
 
 .link:hover {
-    color: var(--orange-accent)
+    color: var(--primary)
 }
 
 .active-link {
-    border-bottom: 3px solid var(--orange-accent) !important;
+    border-bottom: 3px solid var(--primary) !important;
 }

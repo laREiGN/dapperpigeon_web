@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--light-blue);
+    background-color: var(--parallax_sixth);
 }
 
 .text-container {
@@ -19,7 +19,7 @@
     position: relative;
     z-index: 14;
     text-align: center;
-    color: var(--dark);
+    color: var(--main);
 }
 
 .title {

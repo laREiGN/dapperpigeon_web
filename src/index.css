@@ -1,10 +1,15 @@
 :root {
-  --orange-accent: rgba(239, 109, 37, 1);
-  --orange-particles: rgba(224, 119, 32, 1);
-  --yellow-particles: rgba(221, 176, 34, 1);
-  --white-particles: rgba(255, 255, 255, 1);
-  --light-blue: rgba(143, 191, 204, 1);
-  --dark: rgba(10, 11, 13, 1);
+  --main: #0A0B0D;
+  --primary: #BB00F9;
+  --primary_alt: #9905D6;
+  --secondary: #83C60E;
+
+  --parallax_first: #0A0B0D;
+  --parallax_second: #231849;
+  --parallax_third: #312B77;
+  --parallax_fourth: #27205B;
+  --parallax_fifth: #4D45BA;
+  --parallax_sixth: #9FB5ED ;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;1,900&display=swap');
@@ -14,7 +19,7 @@ body {
   padding:  0;
   min-height: 100vh;
   color: white;
-  background-color: var(--dark);
+  background-color: var(--main);
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none; /*  Firefox */
 }

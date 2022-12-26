@@ -36,7 +36,7 @@
     font-size: 1.25em;
     line-height: 1.5em;
     font-weight: 900;
-    color: var(--orange-accent);
+    color: var(--primary);
 }
 
 .faq-answer {
