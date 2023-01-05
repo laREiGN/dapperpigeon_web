@@ -1,9 +1,8 @@
 .parallax-wrapper {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    min-height: fit-content;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +11,7 @@
 
 .text-container {
     position: absolute;
-    top: 35%;
+    bottom: 57.5%;
 }
 
 .text-container > h1, h2 {
@@ -23,44 +22,74 @@
 }
 
 .title {
-    font-size: 3.5em;
+    font-size: 5rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-style: italic;
 }
 
 .subtitle {
-    font-size: 1.25em;   
+    font-size: 2.25rem;   
     font-family: "Source Sans 3", sans-serif;
     font-weight: 600;   
 }
 
-.parallax-wrapper .parallax-layer {
-    position: absolute;
+@media only screen and (max-width: 1200px) {
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.75rem;
+    }
 }
 
-.parallax-wrapper .parallax-layer:nth-child(1) {
-    left: 0;
-    right: 0;
+.parallax-layer {
+    position: absolute;
+    overflow: hidden;
+    bottom: -1%;
+}
+
+.parallax-layer:nth-child(1) {
     z-index: 8;
-    top: 2px;
+    height: 106vh;
+    top: -5%;
 }
-.parallax-wrapper .parallax-layer:nth-child(2) {
-    width: 102.5%;
+.parallax-layer:nth-child(2) {
     z-index: 7;
-    top: 0;
+    top: -5%;
 }
-.parallax-wrapper .parallax-layer:nth-child(3) {
-    left: 0;
-    right: 0;
+.parallax-layer:nth-child(3) {
     z-index: 6;
-    top: 0;
+    top: -5%;
 }
-.parallax-wrapper .parallax-layer:nth-child(4) {
-    left: 0;
-    right: 0;
+.parallax-layer:nth-child(4) {
     z-index: 5;
-    top: 60%;
+}
+
+.parallax-layer:not(:nth-child(4)) svg {
+    min-height: 106vh;
+    min-width: 106vw;
+}
+
+@media only screen and (max-width: 968px) {
+    .parallax-layer:nth-child(1) {
+        height: 108vh;
+        top: -7%;
+    }
+    .parallax-layer:nth-child(2) {
+        top: -7%;
+    }
+    .parallax-layer:nth-child(3) {
+        top: -7%;
+    }
+    .parallax-layer:nth-child(4) {
+        z-index: 5;
+    }
+    .parallax-layer:not(:nth-child(4)) svg {
+        min-height: 108vh;
+        min-width: 108vw;
+    }
 }
 
 #ts-white-bubbles {

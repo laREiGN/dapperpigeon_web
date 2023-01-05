@@ -19,6 +19,7 @@ export default function PageRouter() {
       <Route path="/news/:slug" element={<PageNotFound />} />
       <Route exact path="/team" element={<PageNotFound />} />
       <Route path="/team/:slug" element={<PageNotFound />} />
+      <Route path="/contact" element={<PageNotFound />} />
     </Routes>
   )
 }

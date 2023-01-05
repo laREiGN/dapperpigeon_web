@@ -1,6 +1,7 @@
 :root {
   --main: #0A0B0D;
   --primary: #BB00F9;
+  --primary_transparent: #bb00f91f;
   --primary_alt: #9905D6;
   --secondary: #83C60E;
 
@@ -9,10 +10,33 @@
   --parallax_third: #312B77;
   --parallax_fourth: #27205B;
   --parallax_fifth: #4D45BA;
-  --parallax_sixth: #9FB5ED ;
+  --parallax_sixth: #9FB5ED;
+
+  width: 100%;
+  min-height: 100vh;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;1,900&display=swap');
+@media only screen and (max-width: 360px) {
+  :root {
+      font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 2500px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 3000px) {
+  :root {
+    font-size: 16px;
+  }
+}
 
 body {
   margin: 0;
@@ -29,67 +53,40 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-#root {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-header {
-  padding: 0;
+* {
   margin: 0;
-}
-
-div {
   padding: 0;
-  margin: 0;
 }
 
 ul {
-  padding: 0;
-  margin: 0;
+  list-style: none;
   list-style-type: none;
 }
 
-h1 {
-  padding: 0;
-  margin: 0;
-}
-
-h2 {
-  padding: 0;
-  margin: 0;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-}
-
 a {
-  padding: 0;
-  margin: 0;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
+  text-decoration: none;
 }
 
 .component-container {
   position: relative;
   width: 100%;
+  gap: 2rem;
 }
 
 .tight-container {
   width: 35%;
   margin: 0 auto;
   padding: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .tight-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tight-container {
+    width: 80%;
+  }
 }

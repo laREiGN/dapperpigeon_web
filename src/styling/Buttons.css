@@ -1,6 +1,5 @@
 .btn {
     width: fit-content;
-    background-color: var(--primary);
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-size: 1em;
@@ -16,8 +15,78 @@
     color: white;
 }
 
+.primary {
+    background-color: var(--primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
 button {
     border: none;
     padding: 0;
     margin: 0;
+}
+
+/* DROPDOWN BUTTON */
+.menu-icon {
+    width: 2rem;
+    height: 100%;
+    display: block;
+    position: absolute;
+    margin: auto 0;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    position: absolute;
+    height: 0.225em;
+    width: 100%;
+    background: var(--primary);
+    border-radius: 10px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.menu-icon.expand span:nth-child(1) {
+    top: 0.2em;
+}
+
+.menu-icon.expand span:nth-child(2),
+.menu-icon.expand span:nth-child(3) {
+    top: 0.75em;
+}
+
+.menu-icon.expand span:nth-child(4) {
+    top: 1.3em;
+}
+
+.menu-icon.collapse span:nth-child(1) {
+    top: 0.5em;
+    width: 0%;
+    left: 50%;
+}
+
+.menu-icon.collapse span:nth-child(2) {
+    height: 0.275em;
+    top: 0.75em;
+    transform: rotate(45deg);
+}
+
+.menu-icon.collapse span:nth-child(3) {
+    height: 0.275em;
+    top: 0.75em;
+    transform: rotate(-45deg);
+}
+
+.menu-icon.collapse span:nth-child(4) {
+    top: 0.5em;
+    width: 0%;
+    left: 50%;
 }

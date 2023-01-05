@@ -4,6 +4,8 @@ import { Header, Footer, PageRouter } from './components/common';
 
 import './index.css';
 import './styling/Buttons.css'
+import './styling/Alignment.css'
+import './styling/Fonts.css'
 
 export default function AppMain() {
 

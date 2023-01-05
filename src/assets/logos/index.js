@@ -1,8 +1,7 @@
-import { Instagram, Steam, TikTok, Youtube } from "./socials";
+import { Instagram, Steam, Youtube } from "./socials";
 
 export {
     Instagram,
     Steam,
-    TikTok,
     Youtube
 }

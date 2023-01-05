@@ -11,14 +11,14 @@ import './Home.css';
 export default function Home() {
 
     useEffect(() => {
-        resizeParent();
+        resizeBack();
 
-        window.addEventListener("resize", resizeParent);
+        window.addEventListener("resize", resizeBack);
         document.addEventListener("mousemove", parallaxStart);
         document.addEventListener("mouseleave", parallaxEnd);
 
         return () => { 
-            window.removeEventListener("resize", resizeParent);
+            window.removeEventListener("resize", resizeBack);
             document.removeEventListener("mousemove", parallaxStart);
             document.removeEventListener("mouseleave", parallaxEnd);
         };
@@ -51,10 +51,10 @@ export default function Home() {
         }
     }
 
-    function resizeParent() {
-        let container = document.querySelector('.parallax-wrapper')
-        let largestLayer = document.querySelector('#largest')
-        container.style.height = `${largestLayer.clientHeight}px`;
+    function resizeBack() {
+        let front = document.querySelector('#front')
+        let back = document.querySelector('#back')
+        back.style.width = `${front.clientWidth}px`;
     }
 
     const particlesInit = async (main) => {
@@ -65,7 +65,7 @@ export default function Home() {
         <div>
             <div className="parallax-wrapper">
                 <div value="0" className="parallax-layer">
-                    <Layer1 id="largest" />
+                    <Layer1 id="front" />
                 </div>
                 <div value="1.2" className="parallax-layer">
                     <Layer2 />
@@ -74,7 +74,7 @@ export default function Home() {
                     <Layer3 />
                 </div>
                 <div value="3.6" className="parallax-layer">
-                    <Layer4 />
+                    <Layer4 id="back" />
                 </div>
                 <div className="text-container">
                     <h1 className="title">FOREST OF FREQUENCIES</h1>
@@ -86,18 +86,22 @@ export default function Home() {
                     options={whitebubbles_config}
                 />
             </div>
-            <div className='component-container'>
+            <div className='component-container flex-column'>
                 <FallingStarsParticles/>
                     <div className='tight-container'>
                         {/* Show the countdown timer */}
                         <Countdown />
                     </div>
+
                 {/* CTA, Release button */}
-                <Brief />
+                {/* <Brief /> */}
+
                 {/* Recent news */}
-                <RecentNews />
+                {/* <RecentNews /> */}
+
                 {/* FAQ */}
-                <Faq />
+                {/* <Faq /> */}
+
                 {/* Footer */}
                 <Footer />
             </div>
