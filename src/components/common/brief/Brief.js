@@ -8,7 +8,7 @@ export default function Brief() {
         <div className="brief-container">
             <div className="brief-text">
                 <h1 className="ctatitle">EXPLORE</h1>
-                <h2 className="ctasubtitle">You are their only hope</h2>
+                <h2 className="ctasubtitle">Tune into the power of magical frequencies</h2>
                 <p className="ctabrief">
                     <strong>Forest of Frequencies</strong> is a single player 
                     adventure strategy game where you can explore a world filled
@@ -18,7 +18,7 @@ export default function Brief() {
                     journey. Hypnotise enemies, guide souls and defeat hungry
                     hollow husks all through the power of music.
                 </p>
-                <a href="https://www.google.com/" rel="noreferrer" target="_blank" className="btn">
+                <a href="https://www.google.com/" rel="noreferrer" target="_blank" className="btn secondary">
                     PRE-SAVE NOW
                 </a>
             </div>

@@ -41,7 +41,7 @@ export default function RecentNews() {
                         </Link>
                     ))}
             </div>
-            <Link className="btn" to={"/news"}>SEE MORE NEWS</Link>
+            <Link className="btn secondary" to={"/news"}>SEE MORE NEWS</Link>
         </div>
     )
 }

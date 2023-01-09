@@ -4,13 +4,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2em;
+    gap: 2rem;
 }
 
 .faq-title {
     text-align: center;
     font-family: Montserrat, sans-serif;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 600;
 }
 
@@ -19,13 +19,13 @@
     width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5em;
+    gap: 5rem;
 }
 
 .faq-item {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1.5rem;
 }
 
 .faq-question, .faq-answer {
@@ -33,16 +33,24 @@
 }
 
 .faq-question {
-    font-size: 1.25em;
-    line-height: 1.5em;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     font-weight: 900;
     color: var(--primary);
 }
 
 .faq-answer {
-    font-size: 1.1em;
-    line-height: 1.5em;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     font-weight: 400;
     color: white;
     text-align: start;
+}
+
+@media only screen and (max-width: 1200px) {
+    .faq {
+        width: 80%;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
 }

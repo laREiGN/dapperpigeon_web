@@ -62,7 +62,7 @@ export default function Home() {
     };
 
     return (
-        <div>
+        <div className="home-container">
             <div className="parallax-wrapper">
                 <div value="0" className="parallax-layer">
                     <Layer1 id="front" />
@@ -91,16 +91,19 @@ export default function Home() {
                     <div className='tight-container'>
                         {/* Show the countdown timer */}
                         <Countdown />
+
+                        {/* Mailing list field */}
+
                     </div>
 
                 {/* CTA, Release button */}
-                {/* <Brief /> */}
+                <Brief />
 
                 {/* Recent news */}
-                {/* <RecentNews /> */}
+                <RecentNews />
 
                 {/* FAQ */}
-                {/* <Faq /> */}
+                <Faq />
 
                 {/* Footer */}
                 <Footer />

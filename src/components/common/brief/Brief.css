@@ -1,19 +1,17 @@
 .brief-container {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 5em 0;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 15vw 25vw 60vw;
+    grid-template-areas: ". text photo";
 }
 
 .brief-text {
+    grid-area: text;
     margin: auto 0;
-    width: 25%;
-    padding: 1em;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 2rem;
 }
 
 .ctatitle, .ctasubtitle, .ctabrief, .ctabutton {
@@ -25,28 +23,60 @@
 .ctatitle {
     color: white;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .ctasubtitle {
     color: var(--primary);
     font-weight: 900;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .ctabrief {
     color: white;
     font-weight: 400;
-    font-size: 1.1em;
-    line-height: 1.5em;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 
 .brief-image-container {
-    width: 60%;
+    grid-area: photo;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
 .brief-image {
     width: 80%;
+}
+
+.brief-text .btn  {
+    font-size: 1.25rem !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .brief-container {
+        margin: 0 auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "text";
+    }
+
+    .brief-text {
+        gap: 1.5rem;
+    }
+
+    .ctatitle {
+        text-align: center;
+    }
+
+    .ctasubtitle {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+
+    .brief-image-container {
+        display: none;
+    }
 }
