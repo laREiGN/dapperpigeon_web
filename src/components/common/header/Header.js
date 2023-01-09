@@ -76,13 +76,13 @@ export default function Header() {
                                     <p>HOME</p>
                                 </NavLink>
                             </div>
-                            <div className="link-container">
+                            {/* <div className="link-container">
                                 <NavLink
                                     className={({ isActive }) => (isActive ? "link active-link" : "link")}
                                     to={"/game"}>
                                     <p>GAME</p>
                                 </NavLink>
-                            </div>
+                            </div> */}
                             <div className="link-container">
                                 <NavLink
                                     className={({ isActive }) => (isActive ? "link active-link" : "link")}

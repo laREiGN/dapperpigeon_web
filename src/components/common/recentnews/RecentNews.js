@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import { sanityClient } from "../../config";
+import ArticleThumbnail from "../article_thumbnail";
 
 import './RecentNews.css'
 
@@ -32,13 +33,14 @@ export default function RecentNews() {
             <div className="recentnews">
                 {recentNews &&
                     recentNews.map((post, index) => (
-                        <Link className="recentnews__post" to={"/news/" + post.slug.current} key={post.slug.current}>
-                            <div className="recentnews__post-content" key={index}>
-                                <img className="recentnews__post-image" src={post.mainImage.asset.url} alt=""/>
-                                <h1 className="recentnews__post-title">{post.title}</h1>
-                                <p className="recentnews__post-blurb">{post.blurb}</p>
-                            </div>
-                        </Link>
+                        <ArticleThumbnail
+                            isFullThumbnail={false}
+                            key={index}
+                            slug={post.slug.current}
+                            title={post.title}
+                            blurb={post.blurb}
+                            imageUrl={post.mainImage.asset.url}
+                        />
                     ))}
             </div>
             <Link className="btn secondary" to={"/news"}>SEE MORE NEWS</Link>

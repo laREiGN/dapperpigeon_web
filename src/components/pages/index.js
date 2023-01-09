@@ -1,17 +1,13 @@
-import AllMembers from "./all_members";
-import AllPosts from "./all_posts";
-import OneMember from "./one_member";
 import OnePost from "./one_post";
 import Home from "./home";
+import Team from "./team";
 import PageNotFound from "./pagenotfound";
 import TempLandingPage from "./templandingpage";
 
 export {
-    AllMembers,
-    AllPosts,
-    OneMember,
     OnePost,
     Home,
+    Team,
     PageNotFound,
     TempLandingPage
 }
