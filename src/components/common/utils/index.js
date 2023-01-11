@@ -1,5 +1,7 @@
-import {formatDate} from './timeFunctions';
+import { longDate, writtenDate, daysSince } from './timeFunctions';
 
 export {
-    formatDate
+    longDate,
+    writtenDate,
+    daysSince,
 };

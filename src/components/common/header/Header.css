@@ -108,7 +108,7 @@
     display: none !important;
 }
 
-@media only screen and (max-width: 1079px) {
+@media only screen and (max-width: 1200px) {
     .header {
         background-color: transparent;
     }

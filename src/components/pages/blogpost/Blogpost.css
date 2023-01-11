@@ -1,0 +1,164 @@
+.blogpost {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15rem;
+}
+
+.blogpost-container {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 8fr 3.5fr;
+  gap: 6rem;
+}
+
+.blogpost-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.bp-title {
+  font-size: 5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.bp-date {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-align: start;
+  font-style: italic;
+}
+
+.bp-header {
+  width: 100%;
+}
+
+.bp-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bp-content figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.bp-content figure > img {
+  width: 80%;
+  border: 5px solid var(--primary);
+  border-radius: 5px;
+}
+
+.bp-content h1 {
+  font-size: 3rem;
+}
+.bp-content h2 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  text-align: start;
+}
+.bp-content h3 {
+  font-size: 2.5rem;
+
+}
+.bp-content h4, p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.bp-content blockquote {
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.bp-content ul {
+  padding: 0 3rem;
+}
+
+.bp-content li {
+  font-size: 1.4rem;
+}
+
+.bp-content li::before {
+  content: "\2022";
+  font-weight: bold;
+  color: var(--primary);
+  display: inline-block;
+  width: 1rem;
+  font-size: 1.6rem;
+}
+
+.bp-content a {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.blogpost-navbar_container {
+  width: 100%;
+  height: 100%;
+}
+
+.blogpost-navbar {
+  width: 100%;
+  max-height: 80vh;
+  position: sticky;
+  overflow: scroll;
+  top: 10vh;
+  scrollbar-color: var(--primary) transparent;
+}
+
+.blogpost-navbar::-webkit-slider-thumb {
+  background-color: var(--primary);
+}
+
+.blogpost-navbar::-webkit-slider-runnable-track {
+  background-color: transparent;
+}
+.blogpost-button {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .blogpost {
+      padding-top: 7.5rem;
+  }
+
+  .blogpost-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .blogpost-navbar_container {
+    display: none;
+  }
+  
+  .bp-title {
+    text-align: center;
+    order: -2;
+  }
+
+  .bp-date {
+    text-align: center;
+    order: -1;
+  }
+
+  .bp-header {
+    order: -3;
+  }
+
+  .blogpost-button {
+    display: flex;
+    justify-content: center;
+  }
+}
