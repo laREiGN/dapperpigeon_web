@@ -7,6 +7,7 @@ import Faq from "./faq";
 import RecentNews from "./recentnews";
 import ArticleThumbnail from "./article_thumbnail";
 import ArticleEntry from "./article_entry";
+import ArticleFullThumbnail from "./article_full_thumbnail";
 import Footer from "./footer";
 import PageRouter from "./page_router";
 import { longDate, writtenDate, daysSince } from "./utils";
@@ -20,6 +21,7 @@ export {
     Faq,
     RecentNews,
     ArticleThumbnail,
+    ArticleFullThumbnail,
     ArticleEntry,
     Footer,
     PageRouter,

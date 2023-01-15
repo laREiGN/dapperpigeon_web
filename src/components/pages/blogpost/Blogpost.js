@@ -27,12 +27,7 @@ export default function Blogpost() {
         `*[slug.current == $slug]{
           title,
           publishedAt,
-          mainImage{
-            asset->{
-              _id,
-              url
-              }
-            },
+          mainImage,
           body,
        }`,
           { slug }
@@ -47,12 +42,7 @@ export default function Blogpost() {
               title,
               slug,
               publishedAt,
-              mainImage{
-                  asset->{
-                      _id,
-                      url
-                  }
-              }
+              mainImage,
           }`,
         { slug }
       )
@@ -86,7 +76,7 @@ export default function Blogpost() {
                   slug={post.slug.current}
                   publishedAt={post.publishedAt}
                   title={post.title}
-                  imageUrl={urlFor(post.mainImage).size(100).url()}
+                  imageUrl={urlFor(post.mainImage).size(150).url()}
                 />
               ))}
           </div>

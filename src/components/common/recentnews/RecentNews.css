@@ -27,3 +27,35 @@
 .recentnews-container .btn {
   font-size: 1.25rem !important;
 }
+
+@media only screen and (max-width: 1200px) {
+  .recentnews {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 968px) {
+  .recentnews {
+    display: flex;
+    width: 100vw;
+    overflow-x: scroll;
+    margin-left: 50vw;
+    transform: translateX(-50vw);
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .recentnews::-webkit-scrollbar{
+    display: none;
+  }
+
+  .recentnews .recentnews__post {
+    margin-right: 20vw;
+  }
+
+  .recentnews .recentnews__post:first-child {
+    padding-left: calc(50vw - (80vw / 2));
+  }
+
+}

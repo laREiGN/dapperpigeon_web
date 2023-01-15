@@ -26,7 +26,7 @@ const fallingstars_config = {
     shape: {
       type: 'image',
       image: {
-        src: 'https://cdn.discordapp.com/attachments/1041748051167023214/1045359554269032498/Particle.png',
+        src: 'https://i.imgur.com/9fmZF6r.png',
         height: 50,
         width: 50,
       },

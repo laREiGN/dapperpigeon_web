@@ -79,11 +79,12 @@
 
     .usp-header {
         height: 100%;
-        font-size: 1.5rem;
+        font-size: 2.75rem;
+        line-height: 3.25rem;
     }
 
     .usp-text {
         height: 100%;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }

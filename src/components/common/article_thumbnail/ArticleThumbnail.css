@@ -1,6 +1,6 @@
 .recentnews__post {
   margin: 0 auto;
-  opacity: 0.25;
+  opacity: 0.5;
   width: 100%;
   height: fit-content;
   text-decoration: none;
@@ -10,7 +10,7 @@
 
 .recentnews__post:hover {
   transform: scale(1.15);
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .recentnews__post-content {
@@ -52,4 +52,39 @@
   max-height: 7.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 968px) {
+  .recentnews__post {
+    opacity: 1;
+    scroll-snap-align: center;
+    flex: 0 0 80vw;
+    width: 80vw;
+    box-sizing: content-box;
+    display: flex;
+  }
+  .recentnews__post:hover {
+      transform: none;
+  }
+
+  .recentnews__post-content {
+    padding: 0;
+    gap: 2rem;
+    border-radius: 20px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+  }
+
+  .recentnews__post-title {
+    color: white;
+    text-align: center;
+  }
+
+  .recentnews__post-blurb {
+    color: white;
+    text-align: center;
+  }
+
+  .recentnews__post-image {
+    border-radius: 20px;
+  }
 }

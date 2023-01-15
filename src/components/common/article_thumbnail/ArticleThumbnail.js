@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import './ArticleThumbnail.css'
 
 function ArticleThumbnail({
-  isFullThumbnail,
   slug,
   title,
   blurb,
@@ -24,7 +23,6 @@ function ArticleThumbnail({
 }
 
 ArticleThumbnail.propTypes = {
-  isFullThumbnail: PropTypes.bool,
   slug: PropTypes.string,
   title: PropTypes.string,
   blurb: PropTypes.string,

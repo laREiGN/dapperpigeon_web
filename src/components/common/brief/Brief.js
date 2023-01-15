@@ -1,5 +1,5 @@
 import React from "react";
-import ExploreImageGrad from '../../../assets/images/ExploreImageGrad.svg'
+import ExploreImage from '../../../assets/images/ExploreImage.png'
 
 import './Brief.css';
 
@@ -23,7 +23,7 @@ export default function Brief() {
                 </a>
             </div>
             <div className="brief-image-container">
-                <img className="brief-image" src={ExploreImageGrad} alt=""></img>
+                <img className="brief-image" src={ExploreImage} alt=""></img>
             </div>
         </div>
     )
