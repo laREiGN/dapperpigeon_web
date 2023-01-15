@@ -2,6 +2,7 @@ import Header from "./header";
 import Countdown from "./countdown";
 import MailingList from "./mailinglist";
 import Brief from "./brief";
+import USPs from "./usps";
 import Faq from "./faq";
 import RecentNews from "./recentnews";
 import ArticleThumbnail from "./article_thumbnail";
@@ -15,6 +16,7 @@ export {
     Countdown,
     MailingList,
     Brief,
+    USPs,
     Faq,
     RecentNews,
     ArticleThumbnail,

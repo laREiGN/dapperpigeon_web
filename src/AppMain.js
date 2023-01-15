@@ -1,6 +1,6 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 import { Header, Footer, PageRouter } from './components/common';
+import { FallingStarsParticles } from "./components/common/particles";
 
 import './index.css';
 import './styling/Buttons.css'
@@ -8,24 +8,20 @@ import './styling/Alignment.css'
 import './styling/Fonts.css'
 
 export default function AppMain() {
-
-  const currentRoute = useLocation();
-
-  let footer;
-  if (currentRoute.pathname === "/") {
-    footer = null;
-  } else {
-    footer = <Footer />;
-  }
-
   return (
-    <div>
+    <div className='component-container'>
+
+    
+        {/* PARTICLES */}
+        <FallingStarsParticles />
+
+
         {/* Header + Socials + navigation bar */}
         <Header />
         {/* Show the correct page depending on our URL */}
         <PageRouter />
         {/* Footer only if page is not Home */}
-        {footer}
+        <Footer />
     </div>
   )
 }

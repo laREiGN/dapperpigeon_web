@@ -1,0 +1,89 @@
+.usp-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.usp-tight-container {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.usp-item {
+    width: 100%;
+    position: relative;
+    height: fit-content;
+}
+
+.usp-border {
+    width: 100%;
+    height: auto;
+}
+
+.usp-content {
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 14%;
+    right: 14%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 4fr 4.5fr;
+}
+
+.usp-header {
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.usp-text {
+    height: 100%;
+    font-size: 1.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.usp-image {
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .usp-tight-container {
+        width: 80%;
+    }
+
+    .usp-header {
+        height: 100%;
+        font-size: 1.5rem;
+    }
+
+    .usp-text {
+        height: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 968px) {
+    .usp-tight-container {
+        flex-direction: column;
+    }
+
+    .usp-header {
+        height: 100%;
+        font-size: 1.5rem;
+    }
+
+    .usp-text {
+        height: 100%;
+        font-size: 1rem;
+    }
+}

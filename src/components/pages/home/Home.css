@@ -1,14 +1,21 @@
 .home-container {
     overflow: hidden;
+    padding-top: 100vh;
+}
+
+.home-component-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 }
 
 .parallax-wrapper {
-    position: relative;
+    position: absolute;
     overflow: hidden;
-    min-width: 100vw;
-    width: auto;
-    min-height: 100vh;
-    height: fit-content;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,50 +64,52 @@
 
 .parallax-layer:nth-child(1) {
     z-index: 8;
-    top: -5vh;
+    border-left: solid 10rem var(--main);
+    border-right: solid 10rem var(--main);
+    top: -12vh;
 }
 .parallax-layer:nth-child(2) {
     z-index: 7;
-    top: -5vh;
+    top: -12vh;
 }
 .parallax-layer:nth-child(3) {
     z-index: 6;
-    top: -5vh;
+    top: -12vh;
 }
 .parallax-layer:nth-child(4) {
     z-index: 5;
 }
 
 .parallax-layer:not(:nth-child(4)) svg {
-    min-height: 106vh;
-    min-width: 106vw;
+    min-height: 113vh;
+    min-width: 102vw;
     height: auto;
     width: auto;
 }
 
 @media only screen and (max-width: 968px) {
     .parallax-layer:nth-child(1) {
-        height: 108vh;
-        top: -7vh;
+        height: 113vh;
+        top: -12vh;
     }
     .parallax-layer:nth-child(2) {
-        top: -7vh;
+        top: -12vh;
     }
     .parallax-layer:nth-child(3) {
-        top: -7vh;
+        top: -12vh;
     }
     .parallax-layer:nth-child(4) {
         z-index: 5;
     }
     .parallax-layer:not(:nth-child(4)) svg {
-        min-height: 108vh;
-        min-width: 108vw;
+        min-height: 113vh;
+        min-width: 102vw;
     }
 }
 
 #ts-white-bubbles {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     z-index: 3;
 }

@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import Particles from 'react-tsparticles'
-import { loadFull } from "tsparticles";
 
 import { Layer1, Layer2, Layer3, Layer4 } from "../../../assets";
-import { whitebubbles_config, FallingStarsParticles } from "../../common/particles";
-import { Countdown, Brief, RecentNews, Faq, Footer } from '../../common';
+import { whitebubbles_config } from "../../common/particles";
+import { Countdown, MailingList, Brief, USPs, RecentNews, Faq } from '../../common';
 
 import './Home.css';
 
@@ -57,10 +56,6 @@ export default function Home() {
         back.style.width = `${front.clientWidth}px`;
     }
 
-    const particlesInit = async (main) => {
-        await loadFull(main);
-    };
-
     return (
         <div className="home-container">
             <div className="parallax-wrapper">
@@ -82,31 +77,28 @@ export default function Home() {
                 </div>
                 <Particles
                     id="ts-white-bubbles"
-                    init={particlesInit}
                     options={whitebubbles_config}
                 />
             </div>
-            <div className='component-container flex-column'>
-                <FallingStarsParticles/>
+            <div className='home-component-container flex-column'>
                     <div className='tight-container'>
                         {/* Show the countdown timer */}
                         <Countdown />
 
                         {/* Mailing list field */}
-
+                        <MailingList />
                     </div>
-
                 {/* CTA, Release button */}
                 <Brief />
+
+                {/* USPs */}
+                <USPs />
 
                 {/* Recent news */}
                 <RecentNews />
 
                 {/* FAQ */}
                 <Faq />
-
-                {/* Footer */}
-                <Footer />
             </div>
         </div>
     )

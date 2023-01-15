@@ -1,3 +1,5 @@
+@import url("https://assets.mlcdn.com/fonts.css?version=1668071");
+
 .mailinglist-container {
   width: 100%;
   display: flex;
@@ -5,21 +7,50 @@
   padding: 2em 0;
 }
 
-.mailinglist {
+.ml-subscribe-form {
   width: 100%;
-  margin: auto;
+  height: 100%;
+}
+
+.ml-block-form {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1em;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ml-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.ml-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ml-button button {
+  padding: 1rem 2rem !important;
+  font-size: 1.25rem !important;
+}
+
+.ml-field-email {
+  width: 100%;
+  height: 100%;
 }
 
 .email-input {
-  width: 60%;
-  padding: 1em;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
   border: none;
   border-radius: 20px;
   font-family: Montserrat, sans-serif;
+  border: solid 2px transparent;
   color: var(--main);
 }
 
@@ -27,18 +58,36 @@
   outline: 2px solid var(--primary);
 }
 
-::placeholder {
-  font-family: Montserrat, sans-serif;
-  opacity: 1;
-  /* Firefox */
+.mailinglist-form_recaptcha {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  font-family: Montserrat, sans-serif;
+.mailinglist-form_recaptcha iframe {
+  border: solid 2px transparent;
 }
 
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  font-family: Montserrat, sans-serif;
+.ml-error input{
+  border: solid 2px red !important;
+}
+
+.ml-error iframe {
+  border: solid 2px red;
+}
+
+@media screen and (max-width: 1200px) {
+  .ml-row {
+    grid-template-columns: 1fr;
+  }
+
+  .ml-button {
+    justify-content: center;
+  }
+
+  .mailinglist-form_recaptcha {
+    justify-content: center;
+  }
 }

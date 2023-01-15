@@ -1,7 +1,7 @@
 .brief-container {
     width: 100%;
     display: grid;
-    grid-template-columns: 15vw 25vw 60vw;
+    grid-template-columns: 15% 25% 60%;
     grid-template-areas: ". text photo";
 }
 

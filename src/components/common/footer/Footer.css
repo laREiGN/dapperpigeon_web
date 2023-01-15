@@ -1,9 +1,9 @@
 .footer-container {
     background-color: transparent;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     overflow-y: visible;
-    width: 100vw;
-    height: 20rem;
+    width: 100%;
 }
 
 .footer-image {
