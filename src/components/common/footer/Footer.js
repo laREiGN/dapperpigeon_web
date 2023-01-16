@@ -13,15 +13,15 @@ export default function Footer() {
             </div>
             <div className="footer-content">
                 <div className="footer-socials">
-                    <Link className="footer-social" to={"/"}>
+                    <a className="footer-social" href="https://www.instagram.com/dapper_pigeon_productions/" target="_blank" rel="noreferrer">
                         <Instagram />
-                    </Link>
-                    <Link className="footer-social" to={"/"}>
+                    </a>
+                    <a className="footer-social" href="https://www.youtube.com/@DapperPigeon" target="_blank" rel="noreferrer">
                         <Steam />
-                    </Link>
-                    <Link className="footer-social" to={"/"}>
+                    </a>
+                    <a className="footer-social" href="https://www.youtube.com/@DapperPigeon" target="_blank" rel="noreferrer">
                         <Youtube />
-                    </Link>
+                    </a>
                 </div>
                 <small className="footer-copyright">
                     Copyright 2022 Dapper Pigeon
