@@ -24,7 +24,7 @@
 
 .text-container {
     position: absolute;
-    bottom: 52.5%;
+    bottom: 62.5%;
 }
 
 .text-container > h1, h2 {
@@ -35,14 +35,14 @@
 }
 
 .title {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-style: italic;
 }
 
 .subtitle {
-    font-size: 2rem;   
+    font-size: 1.75rem;   
     font-family: "Source Sans 3", sans-serif;
     font-weight: 600;   
 }

@@ -19,7 +19,7 @@
 }
 
 .header-item-container {
-    padding: 1.5rem 5%;
+    padding: 0.75rem 5%;
     display: grid;
     grid-template-columns: 20rem 8rem 1fr;
     grid-template-areas: "logo socials nav";
@@ -30,7 +30,7 @@
     grid-area: logo;
     margin: auto 1rem;
     text-align: end;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .header-socials {
@@ -41,11 +41,11 @@
 }
 
 .social {
-    height: 2rem;
+    height: 1.5rem;
 }
 
 .social svg {
-    height: 1.8rem;
+    height: 1.35rem;
     width: auto;
 }
 
@@ -66,7 +66,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .btn {
-    padding: 1rem 4rem !important;
+    padding: 0.5rem 3rem !important;
 }
 
 .menu-icon {

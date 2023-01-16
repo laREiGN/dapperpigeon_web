@@ -18,7 +18,7 @@ export default function Brief() {
                     journey. Hypnotise enemies, guide souls and defeat hungry
                     hollow husks all through the power of music.
                 </p>
-                <a href="https://www.google.com/" rel="noreferrer" target="_blank" className="btn secondary">
+                <a href="https://www.dapperpigeon.nl/" rel="noreferrer" target="_blank" className="btn secondary">
                     PRE-SAVE NOW
                 </a>
             </div>

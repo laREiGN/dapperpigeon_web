@@ -22,14 +22,19 @@
 .ml-row {
   width: 100%;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.5fr 1.5fr;
   justify-content: center;
   gap: 2rem;
 }
 
 .ml-button {
   display: flex;
+  width: 100%;
   justify-content: flex-end;
+}
+
+.ml-button .btn {
+  width: 100%;
 }
 
 .ml-button button {
