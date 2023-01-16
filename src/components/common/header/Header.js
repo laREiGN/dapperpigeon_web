@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Instagram, Steam, Youtube } from "../../../assets";
 
 import './Header.css'
@@ -57,15 +57,15 @@ export default function Header() {
                         <h1>DAPPER PIGEON</h1>
                     </div>
                     <div className="header-socials flex-row">
-                        <Link className="social" to={"/"}>
+                        <a className="social" href="https://www.instagram.com/dapper_pigeon_productions/" target="_blank" rel="noreferrer">
                             <Instagram />
-                        </Link>
-                        <Link className="social" to={"/"}>
+                        </a>
+                        <a className="social" href="https://www.youtube.com/@DapperPigeon" target="_blank" rel="noreferrer">
                             <Steam />
-                        </Link>
-                        <Link className="social" to={"/"}>
+                        </a>
+                        <a className="social" href="https://www.youtube.com/@DapperPigeon" target="_blank" rel="noreferrer">
                             <Youtube />
-                        </Link>
+                        </a>
                     </div>
                     <div className="header-nav-container">
                         <ul className="header-nav">
