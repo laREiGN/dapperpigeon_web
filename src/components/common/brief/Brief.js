@@ -18,8 +18,8 @@ export default function Brief() {
                     journey. Hypnotise enemies, guide souls and defeat hungry
                     hollow husks all through the power of music.
                 </p>
-                <a href="https://www.dapperpigeon.nl/" rel="noreferrer" target="_blank" className="btn secondary">
-                    PRE-SAVE NOW
+                <a href="https://store.steampowered.com/app/2244690/Forest_of_Frequencies/" rel="noreferrer" target="_blank" className="btn secondary">
+                    WISHLIST NOW
                 </a>
             </div>
             <div className="brief-image-container">
