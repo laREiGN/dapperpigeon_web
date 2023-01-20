@@ -16,7 +16,7 @@ export default function Footer() {
                     <a className="footer-social" href="https://www.instagram.com/dapper_pigeon_productions/" target="_blank" rel="noreferrer">
                         <Instagram />
                     </a>
-                    <a className="footer-social" href="https://www.youtube.com/@DapperPigeon" target="_blank" rel="noreferrer">
+                    <a className="footer-social" href="https://store.steampowered.com/app/2244690/Forest_of_Frequencies/" target="_blank" rel="noreferrer">
                         <Steam />
                     </a>
                     <a className="footer-social" href="https://www.youtube.com/@DapperPigeon" target="_blank" rel="noreferrer">
