@@ -12,12 +12,12 @@ export default function PageRouter() {
   }, [location.pathname]);
 
   return (
-    <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route exact path="/news" element={<Blog />} />
-      <Route path="/news/:slug" element={<Blogpost />} />
-      <Route exact path="/team" element={<Team />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/news" element={<Blog />} />
+        <Route path="/news/:slug" element={<Blogpost />} />
+        <Route exact path="/team" element={<Team />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
   )
 }

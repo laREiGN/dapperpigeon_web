@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.b6520818.css",
-    "main.js": "/static/js/main.2e41b413.js",
-    "static/media/ExploreImage.png": "/static/media/ExploreImage.7aabe8c882458787de06.png",
-    "static/media/Layer1.svg": "/static/media/Layer1.72ffd0a49bbd11d3c57820a0316cefb3.svg",
-    "static/media/Layer2.svg": "/static/media/Layer2.cfd6ce3ad97c6a8242dd282c83c53ff2.svg",
-    "static/media/Layer3.svg": "/static/media/Layer3.47927b8b55f6ad6d3cbe035817bf56ae.svg",
-    "static/media/Layer4.svg": "/static/media/Layer4.3167f3ba4e150b57d0d7dd6895406ad2.svg",
-    "static/media/FooterImage.svg": "/static/media/FooterImage.067595919b02c641a304be84e124c03e.svg",
-    "static/media/UspMushroom.svg": "/static/media/UspMushroom.7bd83016e78fbaf0749e3848e7550749.svg",
-    "static/media/UspPotion.svg": "/static/media/UspPotion.6b116c4d1a9b7fc784d6ea8cc082db5b.svg",
-    "static/media/Steam.svg": "/static/media/Steam.b58d01c23c16d40440929c1899370310.svg",
-    "static/media/UspArrows.svg": "/static/media/UspArrows.6038546a2c6fbc5d13d2772de9544c2e.svg",
-    "static/media/UspBorder.svg": "/static/media/UspBorder.d780b1aff1e62382d4d4f3a2807f6c0d.svg",
-    "static/media/Instagram.svg": "/static/media/Instagram.cd54089638a7e9ea7024ce60c31ce201.svg",
-    "index.html": "/index.html",
-    "static/media/Youtube.svg": "/static/media/Youtube.289a6cbdddae729a9bcea85be797b69b.svg",
-    "main.b6520818.css.map": "/static/css/main.b6520818.css.map",
-    "main.2e41b413.js.map": "/static/js/main.2e41b413.js.map"
+    "main.css": "./static/css/main.b6520818.css",
+    "main.js": "./static/js/main.0b1f9c33.js",
+    "static/media/ExploreImage.png": "./static/media/ExploreImage.7aabe8c882458787de06.png",
+    "static/media/Layer1.svg": "./static/media/Layer1.72ffd0a49bbd11d3c57820a0316cefb3.svg",
+    "static/media/Layer2.svg": "./static/media/Layer2.cfd6ce3ad97c6a8242dd282c83c53ff2.svg",
+    "static/media/Layer3.svg": "./static/media/Layer3.47927b8b55f6ad6d3cbe035817bf56ae.svg",
+    "static/media/Layer4.svg": "./static/media/Layer4.3167f3ba4e150b57d0d7dd6895406ad2.svg",
+    "static/media/FooterImage.svg": "./static/media/FooterImage.067595919b02c641a304be84e124c03e.svg",
+    "static/media/UspMushroom.svg": "./static/media/UspMushroom.7bd83016e78fbaf0749e3848e7550749.svg",
+    "static/media/UspPotion.svg": "./static/media/UspPotion.6b116c4d1a9b7fc784d6ea8cc082db5b.svg",
+    "static/media/Steam.svg": "./static/media/Steam.b58d01c23c16d40440929c1899370310.svg",
+    "static/media/UspArrows.svg": "./static/media/UspArrows.6038546a2c6fbc5d13d2772de9544c2e.svg",
+    "static/media/UspBorder.svg": "./static/media/UspBorder.d780b1aff1e62382d4d4f3a2807f6c0d.svg",
+    "static/media/Instagram.svg": "./static/media/Instagram.cd54089638a7e9ea7024ce60c31ce201.svg",
+    "index.html": "./index.html",
+    "static/media/Youtube.svg": "./static/media/Youtube.289a6cbdddae729a9bcea85be797b69b.svg",
+    "main.b6520818.css.map": "./static/css/main.b6520818.css.map",
+    "main.0b1f9c33.js.map": "./static/js/main.0b1f9c33.js.map"
   },
   "entrypoints": [
     "static/css/main.b6520818.css",
-    "static/js/main.2e41b413.js"
+    "static/js/main.0b1f9c33.js"
   ]
 }

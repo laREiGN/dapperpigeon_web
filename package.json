@@ -2,6 +2,7 @@
   "name": "dapperpigeon_web",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@sanity/block-content-to-react": "^3.0.0",
