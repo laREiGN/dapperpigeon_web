@@ -18,9 +18,14 @@ export default function Brief() {
                     journey. Hypnotise enemies, guide souls and defeat hungry
                     hollow husks all through the power of music.
                 </p>
-                <a href="https://store.steampowered.com/app/2244690/Forest_of_Frequencies/" rel="noreferrer" target="_blank" className="btn secondary">
-                    WISHLIST NOW
-                </a>
+                <div className="brief-button-container">
+                    <a href="https://store.steampowered.com/app/2244690/Forest_of_Frequencies/" rel="noreferrer" target="_blank" className="btn secondary">
+                        PLAY ON STEAM
+                    </a>
+                    <a href="https://dapperpigeon.itch.io/forest-of-frequencies/" rel="noreferrer" target="_blank" className="btn secondary">
+                        PLAY ON ITCH.IO
+                    </a>
+                </div>
             </div>
             <div className="brief-image-container">
                 <img className="brief-image" src={ExploreImage} alt=""></img>

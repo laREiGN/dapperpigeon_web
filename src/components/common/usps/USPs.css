@@ -33,28 +33,27 @@
     right: 14%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.5rem;
+    justify-content: space-between;
 }
 
 .usp-header {
-    height: 100%;
-    font-size: 2rem;
     font-weight: 600;
-    line-height: 2rem;
-    height: 25%;
+    font-size: 1.5vw;
+    line-height: 2.25vw;
+    height: fit-content
 }
 
 .usp-text {
-    height: 100%;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    height: 35%;
+    font-size: 0.85vw;
+    line-height: 1.3vw;
+    height: max-content;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .usp-image {
-    height: 40%;
+    height: 30%;
     object-fit: cover;
     margin: 0 auto;
 }
@@ -63,16 +62,6 @@
     .usp-tight-container {
         width: 80%;
     }
-
-    .usp-header {
-        height: 100%;
-        font-size: 1.5rem;
-    }
-
-    .usp-text {
-        height: 100%;
-        font-size: 1rem;
-    }
 }
 
 @media only screen and (max-width: 968px) {
@@ -80,21 +69,13 @@
         flex-direction: column;
     }
 
-    .usp-content {
-        gap: 0.5rem;
-        justify-content: space-between;
-    }
-
     .usp-header {
-        height: 100%;
-        font-size: 1.5rem;
-        line-height: 2rem;
-        height: fit-content
+        font-size: 4vw;
+        line-height: 5vw;
     }
 
     .usp-text {
-        height: 100%;
-        font-size: 0.85rem;
-        height: max-content;   
+        font-size: 3vw;
+        line-height: 4vw; 
     }
 }

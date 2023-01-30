@@ -3,7 +3,7 @@ import Particles from 'react-tsparticles'
 
 import { Layer1, Layer2, Layer3, Layer4 } from "../../../assets";
 import { whitebubbles_config } from "../../common/particles";
-import { Countdown, MailingList, Brief, USPs, RecentNews, Faq } from '../../common';
+import { Countdown, MailingList, Trailer, Brief, USPs, RecentNews, Faq } from '../../common';
 
 import './Home.css';
 
@@ -83,11 +83,14 @@ export default function Home() {
             <div className='home-component-container flex-column'>
                     <div className='tight-container'>
                         {/* Show the countdown timer */}
-                        <Countdown />
+                        {/* <Countdown /> */}
 
                         {/* Mailing list field */}
-                        <MailingList />
+                        {/* <MailingList /> */}
                     </div>
+                {/* Video container */}
+                <Trailer />
+
                 {/* CTA, Release button */}
                 <Brief />
 

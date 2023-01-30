@@ -135,7 +135,7 @@
 
 @media only screen and (max-width: 1200px) {
   .blogpost {
-      padding-top: 7.5rem;
+      padding-top: 2vw;
   }
 
   .blogpost-container {
@@ -148,11 +148,13 @@
   }
   
   .bp-title {
+    font-size: 8vw;
     text-align: center;
     order: -2;
   }
 
   .bp-date {
+    font-size: 6vw;
     text-align: center;
     order: -1;
   }

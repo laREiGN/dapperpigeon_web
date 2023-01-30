@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import { Instagram, Steam, Youtube } from "../../../assets";
 import FooterImage from "../../../assets/images/FooterImage.svg"
